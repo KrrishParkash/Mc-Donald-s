@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ?Stylesheet linking? -->
+    <link rel="stylesheet" href="CSS/mcdonald.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+
+    <!-- ??Font Awesome Icon Library?? -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css"
+      integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--??????? Bootstrap cdn CSS ??????-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <header>
+    <!-- !!!!!!!!!!!!!!!!!!! Navbar !!!!!!!!!!!!!!!!!!! -->
+    <nav
+      class="navbar navbar-expand-sm"
+      style="
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px 0 rgb(208, 208, 208);
+      "
+    >
+      <div class="container">
+        <a href="" class="navbar-brand"
+          ><img src="images/McDonalds_Logo.png" id="logo" alt="logo"
+        /></a>
+        <ul class="navbar-nav" id="nav-1">
+          <li class="nav-list"><a href="" class="nav-link">Careers</a></li>
+          <li class="nav-list"><a href="" class="nav-link">Contact Us</a></li>
+        </ul>
+        <ul class="navbar-nav" id="nav-2">
+          <li class="nav-list">
+            <a href="" class="nav-link"
+              ><i class="fa-solid fa-magnifying-glass" style="color: black"></i>
+              Search</a
+            >
+          </li>
+          <li class="nav-list">
+            <a href="" class="nav-link"
+              ><i class="fa-solid fa-location-dot" style="color: red"></i>
+              Locate Me</a
+            >
+          </li>
+          <li>
+            <a href="" id="order" class="btn btn-warning ps-4 pe-4">
+              Order on McDelivery
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav" id="nav-3">
+          <li class="nav-list">
+            <a href="#" class="nav-link"
+              >Our Menu <i class="fas fa-chevron-down"></i
+            ></a>
+
+            <!-- !!!!!!!!!!!!!!!!! Mega-Menu !!!!!!!!!!!!!!!!! -->
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img src="images/beef-img.jpg" alt="beef burger" />
+                        Beef</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="images/beverages-pk-new.jpg" alt="chicken" />
+                        beverages</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="images/chicken.png" alt="chicken" /> crispy
+                        chicken</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="images/value-meal.png" alt="value-meal" />
+                        value-meal</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="images/chicken-and-fish.jpg"
+                          alt="chicken-and-fish"
+                        />
+                        chicken & fish</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="images/breakfast-pk-new-.jpg"
+                          alt="breakfast-pk-new-"
+                        />
+                        breakfast</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="images/desserts-pk-new.jpg"
+                          alt="desserts-pk-new"
+                        />
+                        desserts</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="images/McCafe-pk-new.jpg"
+                          alt="McCafe-pk-new"
+                        />
+                        McCafé</a
+                      >
+                    </li>
+                    <button class="btn btn-secondary" id="menu-btn">
+                      view full menu
+                    </button>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="images/extra-value-meals-pk-new.jpg"
+                          alt="extra-value-meals-pk-new"
+                        />
+                        extra value meals</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="images/fries-and-sides.jpg"
+                          alt="fries-and-sides"
+                        />
+                        fries and sides</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="images/wraps.png" alt="wraps" /> wraps</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="images/happy-meals-pk-new.jpg"
+                          alt="happy-meals-pk-new"
+                        />
+                        happy meals</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-list">
+            <a href="" class="nav-link"> About Our Food </a>
+          </li>
+          <li class="nav-list">
+            <a href="" class="nav-link"> Your Right To Know </a>
+          </li>
+          <li class="nav-list">
+            <a href="" class="nav-link"> Our App </a>
+          </li>
+          <li class="nav-list">
+            <a href="" class="nav-link"> Family </a>
+          </li>
+          <li class="nav-list">
+            <a href="" class="nav-link"> Trending Now </a>
+          </li>
+        </ul>
+
+        <!-- !!!!!!!! Overlay Side-menu With Burger For Small Screen !!!!!!!! -->
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="overlay">
+        <div id="small-nav">
+          <button class="close-btn">
+            <i class="fa-solid fa-xmark fa-2xl" style="color: #000000"></i>
+          </button>
+          <a href=""
+            ><img src="images/McDonalds_Logo.png" id="logo2" alt="logo"
+          /></a>
+        </div>
+        <br />
+        <div class="container">
+          <ul class="navbar-nav" id="nav-list-sm">
+            <li class="nav-list">
+              <a href="" class="nav-link"> Home </a>
+            </li>
+            <li class="nav-list">
+              <a href="#" class="nav-link" id="accordion-link"
+                >our menu <i class="fas fa-plus" id="accordion-icon"></i
+              ></a>
+
+              <div class="accordion-content" id="accordion-content">
+                <table>
+                  <thead>
+                    <tr>
+                      <th><a href="" class="nav-link"> Our Company</a></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="" class="nav-link">Our community</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="" class="nav-link">Our History</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+
+            <li class="nav-list">
+              <a href="" class="nav-link"> About Our Food </a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link"> Your Right To Know </a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link"> Our App </a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link"> Family </a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link"> Trending Now </a>
+            </li>
+            <hr />
+            <li class="nav-list" id="navicon">
+              <a href="" class="nav-link">
+                Search
+                <i class="fa-solid fa-magnifying-glass" style="color: black"></i
+              ></a>
+            </li>
+            <li class="nav-list" id="navicon-2">
+              <a href="" class="nav-link">
+                Locate Me
+                <i class="fa-solid fa-location-dot" style="color: red"></i
+              ></a>
+            </li>
+            <hr />
+            <li class="nav-list">
+              <a href="" class="nav-link"> Careers </a>
+            </li>
+            <li class="nav-list">
+              <a href="" class="nav-link"> contact us </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <br /><br />
+
+  <body>
+    <div class="container">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <ul class="carousel-indicators">
+          <li
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="bg-danger active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></li>
+          <li
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class="bg-danger"
+          ></li>
+          <li
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class="bg-danger"
+          ></li>
+          <li
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+            class="bg-danger"
+          ></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="images/coffee-coffee_slider-Desktop.png"
+              class="d-block w-100"
+              alt="images/BeefItUp_Desktop-Slider.png"
+            />
+            <div class="carousel-caption">
+              <h2>double the delight</h2>
+              <p>
+                twice the brew and double the joy with this limited-time offer
+              </p>
+
+              <a href="" id="caption-btn" class="btn btn-warning ps-5 pe-5">
+                Order Now
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="images/SnackSip_Desktop-Slider.png"
+              class="d-block w-100"
+              alt="images/BeefItUp_Desktop-Slider.png"
+            />
+            <div class="carousel-caption">
+              <h2>double the crunch, hash browns in a bunch!</h2>
+              <p>
+                treat yourself with one hash browns and one McCafé for just
+                Rs.770
+              </p>
+              <a href="" id="caption-btn" class="btn btn-warning ps-5 pe-5">
+                Order Now
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="images/BeefItUp_Desktop-Slider.png"
+              class="d-block w-100"
+              alt="images/BeefItUp_Desktop-Slider.png"
+            />
+            <div class="carousel-caption">
+              <h2>beef it up!</h2>
+              <p>grab your meaty-meal in such a valuable price</p>
+              <a href="" id="caption-btn" class="btn btn-warning ps-5 pe-5">
+                order now
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="10000">
+            <img
+              src="images/delivery-points-desktop-slider.png"
+              class="d-block w-100"
+              alt="images/BeefItUp_Desktop-Slider.png"
+            />
+            <div class="carousel-caption">
+              <h2>loyalty points zaroori hai!</h2>
+              <p>
+                earn points no every delivery order placed via the Mc Donald's
+                App
+              </p>
+              <a href="" id="caption-btn" class="btn btn-warning ps-5 pe-5">
+                Download Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+      <br /><br /><br /><br />
+
+      <!-- ????????? CARD SECTION STARTED ?????????? -->
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/mccafe-dsk-en.jpg" alt="" />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h3 class="card-title mb-5">McCafé</h3>
+              <p class="card-text mb-4">
+                Browse our menu for more information on topics such as our tasty
+                coffee and espresso drinks.
+              </p>
+              <a href="" class="btn btn-warning ps-4 pe-4 mb-5"> Order Now </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="images/mcdelivery-574x249-en.jpg"
+              alt=""
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h3 class="card-title mb-5">McDelivery</h3>
+              <p class="card-text mb-5">Delivering food at your doorsteps</p>
+              <a href="" class="btn btn-warning ps-4 pe-4 mb-5"> Order Now </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="images/uae-our-app-feature-callout-desktop.jpg"
+              alt=""
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h3 class="card-title mb-5">Our App</h3>
+              <p class="card-text mb-5">McDonald's in your Pocket.</p>
+              <a href="" class="btn btn-warning ps-4 pe-4 mb-5">
+                Download Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/item-4.png" alt="" />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h3 class="card-title mb-5">Our Menu</h3>
+              <p class="card-text mb-5">
+                Our exclusive menu is waiting for you.
+              </p>
+              <a href="" class="btn btn-warning ps-4 pe-4 mb-5"> Order Now </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="images/item-5.png" alt="" />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h3 class="card-title mb-5">Trending Now</h3>
+              <p class="card-text mb-5">Find out what's new.</p>
+              <a href="" class="btn btn-warning ps-4 pe-4 mb-5"> Learn More </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5">
+          <div class="card h-100">
+            <img
+              class="card-img-top"
+              src="images/careers-info-card-1.png"
+              alt=""
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h3 class="card-title mb-5">Careers</h3>
+              <p class="card-text mb-5">Be a part of our team.</p>
+              <a href="" class="btn btn-warning ps-4 pe-4 mb-5">Apply Now </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ????????? CARD SECTION ENDED ?????????? -->
+      <br /><br /><br /><br /><br />
+    </div>
+  </body>
+  <br />
+  <footer
+    class="footer foot-expand-lg"
+    style="
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 10px 0 rgb(208, 208, 208);
+    "
+  >
+    <br />
+    <div class="container">
+      <!-- !! 1st accordion for small screen !! -->
+      <div class="accordion accordion-flush" id="accordionFlushExample-1">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="true"
+              aria-controls="flush-collapseOne"
+            >
+              <table id="table-accordion">
+                <thead>
+                  <tr>
+                    <th><a href="" class="nav-link">our company</a></th>
+                  </tr>
+                </thead>
+              </table>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <table id="table-accordion">
+                <tbody>
+                  <tr>
+                    <td><a href="" class="nav-link">our company page</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="nav-link">our community</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="nav-link">our History </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- !! 2nd accordion for small screen !! -->
+
+      <div class="accordion accordion-flush" id="accordionFlushExample-2">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="true"
+              aria-controls="flush-collapseTwo"
+            >
+              <table id="table-accordion">
+                <thead>
+                  <tr>
+                    <th><a href="" class="nav-link">careers</a></th>
+                  </tr>
+                </thead>
+              </table>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <table id="table-accordion">
+                <tbody>
+                  <tr>
+                    <td><a href="" class="nav-link">careers page</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="nav-link">Corporate</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="nav-link">Restaurant </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- !! 3rd accordion for small screen !! -->
+
+      <div class="accordion accordion-flush" id="accordionFlushExample-3">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="true"
+              aria-controls="flush-collapseThree"
+            >
+              <table id="table-accordion">
+                <thead>
+                  <tr>
+                    <th><a href="" class="nav-link">Contact us</a></th>
+                  </tr>
+                </thead>
+              </table>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <table id="table-accordion">
+                <tbody>
+                  <tr>
+                    <td><a href="" class="nav-link">Contact us page</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="nav-link">Suggestion</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="nav-link">Complaint </a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- !! 4th accordion for small screen !! -->
+
+      <div class="accordion accordion-flush" id="accordionFlushExample-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="true"
+              aria-controls="flush-collapseFour"
+            >
+              <table id="table-accordion">
+                <thead>
+                  <tr>
+                    <th><a href="" class="nav-link">NewsRoom</a></th>
+                  </tr>
+                </thead>
+              </table>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <table id="table-accordion">
+                <tbody>
+                  <tr>
+                    <td><a href="" class="nav-link">NewsRoom page</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="nav-link">local</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- !! table#1 !! -->
+
+      <table>
+        <thead>
+          <tr>
+            <th><a href="" class="nav-link"> Our Company</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="" class="nav-link">Our community</a></td>
+          </tr>
+          <tr>
+            <td><a href="" class="nav-link">Our History</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- !! table#2 !! -->
+      <table>
+        <thead>
+          <tr>
+            <th><a href="" class="nav-link">Careers</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="" class="nav-link">Corporate</a></td>
+          </tr>
+          <tr>
+            <td><a href="" class="nav-link">Restaurant</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- !! table#3 !! -->
+      <table>
+        <thead>
+          <tr>
+            <th><a href="" class="nav-link">Contact Us</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="" class="nav-link">Suggestion</a></td>
+          </tr>
+          <tr>
+            <td><a href="" class="nav-link">Complaint</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- !! table#4 !! -->
+      <table>
+        <thead>
+          <tr>
+            <th><a href="" class="nav-link">NewsRoom</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="" class="nav-link">Local</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <br id="br1-sm" /><br id="br2-sm" /><br id="br3-sm" />
+
+      <section class="mb-5">
+        <div id="i-social">
+          <a
+            id="fb"
+            class="btn btn-primary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            id="tweet"
+            class="btn btn-primary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            id="utube"
+            class="btn btn-primary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            id="insta"
+            class="btn btn-primary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            id="linkin"
+            class="btn btn-primary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            id="tiktok"
+            class="btn btn-primary btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+
+          <br id="br4-sm" />
+          <br id="br5-sm" />
+
+          <div id="i-social-2">
+            <a href="" class="float-end"
+              ><img src="images/app_store_badge.png" alt="badge app"
+            /></a>
+            <a href="" class="float-end"
+              ><img src="images/google_play_badge.png" alt="badge googleplay"
+            /></a>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <hr />
+        <br />
+        <div id="foot">
+          <div id="i-social-3">
+            <a href="" class="nav-link float-start">Contact</a
+            ><a href="" class="nav-link float-start">Privacy policy</a
+            ><a href="" class="nav-link float-start">terms & conditions</a>
+          </div>
+
+          <br id="br6-sm" />
+          <br id="br7-sm" />
+
+          <div id="i-social-4">
+            <p class="float-end">
+              <img
+                src="images/McDonalds_Logo.png"
+                alt="footlogo"
+                style="max-height: 28px"
+              />&copy;2024 mcdonald's. all right reserved
+            </p>
+          </div>
+        </div>
+      </section>
+      <br />
+    </div>
+  </footer>
+
+  <script src="JS/mcdonald.js"></script>
+</html>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"
+></script>

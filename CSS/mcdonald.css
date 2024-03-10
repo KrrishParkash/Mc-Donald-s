@@ -1,0 +1,345 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  color: rgb(50, 50, 50);
+  font-family: speedee;
+}
+@font-face {
+  font-family: speedee;
+  src: url(../fonts/Speedee-Regular.ttf);
+}
+@font-face {
+  font-family: speedee-bold;
+  src: url(../fonts/Speedee-Bold.ttf);
+}
+
+/* ********** Navbar Styling ********** */
+#nav-1 a,
+#nav-2 a {
+  color: rgb(51, 51, 51);
+}
+
+#nav-1,
+#nav-2 {
+  font-size: large;
+  margin-block-start: -60px;
+}
+#nav-1 {
+  position: absolute;
+  left: 14vw;
+  column-gap: 10px;
+}
+#nav-2 {
+  column-gap: 40px;
+}
+#nav-3 {
+  font-weight: 400;
+  font-size: larger;
+  position: absolute;
+  left: 14vw;
+  column-gap: 1.5vw;
+  margin-block-start: 60px;
+}
+#nav-3 a {
+  color: rgb(50, 50, 50);
+}
+#nav-3 .nav-link {
+  position: relative; /* Ensure relative positioning for pseudo-element */
+}
+
+#nav-3 .nav-link:after {
+  content: "";
+  height: 5px;
+  width: 0;
+  background-color: #e33b3b;
+  position: absolute;
+  bottom: -1.5vw;
+  left: 50%;
+  transform: translateX(-50%); /* Center the underline horizontally */
+  transition: width 0.3s ease-in-out;
+}
+
+#nav-3 .nav-link:hover:after,
+#nav-3 .nav-link:focus:after {
+  width: 100%;
+}
+
+#nav-3 .nav-link:focus {
+  font-family: speedee-bold;
+}
+/* ********** Mega-Menu Styling ********** */
+
+.nav-link .fas.fa-chevron-down {
+  transition: transform 0.3s ease-out;
+}
+
+.nav-list:hover .nav-link .fas.fa-chevron-down {
+  transform: rotate(180deg);
+}
+.mega-menu img {
+  inline-size: 80px;
+}
+/* Hide mega menu by default */
+.mega-menu {
+  top: 62px;
+  display: none;
+  position: absolute;
+  left: -250px;
+  width: 110vw;
+  background-color: #fff; /* Adjust as needed */
+  z-index: 999;
+}
+
+.nav-list:hover .mega-menu {
+  display: block;
+}
+
+/* Style the mega menu content */
+.mega-menu-content {
+  font-size: medium;
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 50px;
+}
+
+/* Style the columns within mega menu */
+.mega-menu-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Style the links within the mega menu */
+.mega-menu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+.mega-menu li {
+  list-style: none;
+}
+
+.mega-menu img:hover {
+  transform: scale(0.9);
+  transition: transform 0.2s ease-in-out;
+}
+#menu-btn {
+  color: #2c2c2c;
+  background-color: transparent;
+  transform: translateX(50%);
+  text-transform: capitalize;
+  margin-block: 15px;
+  font-size: 17px;
+  block-size: 45px;
+  inline-size: 150px;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+/* Style for accordion content */
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+/* ********** Burger-Menu Styling ********** */
+.burger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+}
+.line {
+  width: 22px;
+  height: 3px;
+  border-radius: 20px;
+  background-color: black;
+  margin: 3px 3px;
+}
+
+/* ********** Burger Side-Menu Styling ********** */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 1000;
+  transition: width 0.5s ease-in-out;
+  overflow-x: hidden;
+}
+#small-nav {
+  box-shadow: 0 0 10px 0 rgb(208, 208, 208);
+}
+.overlay * {
+  pointer-events: auto; /* Allow pointer events for all children of the overlay */
+}
+
+.overlay.active {
+  width: 100%;
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#logo2 {
+  inline-size: 70px;
+}
+#nav-list-sm {
+  font-weight: 500;
+  font-size: medium;
+  line-height: 40px;
+}
+#navicon i {
+  float: inline-end;
+}
+#navicon-2 i {
+  float: inline-end;
+}
+#accordion-icon {
+  float: inline-end;
+}
+.overlay.active .overlay-content {
+  transform: translateX(0);
+}
+/* 
+.overlay-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 1000;
+  padding: 50px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(100%);
+} */
+
+/* ********** Carosuel Styling ********** */
+.carousel-caption {
+  background-color: white;
+  margin-inline-start: -10vw;
+  border-radius: 5px;
+  margin-inline-end: 43vw;
+  box-shadow: rgba(117, 117, 117, 0.35) 0px 5px 15px;
+  margin-bottom: 2dvw;
+}
+.carousel-caption h2 {
+  color: rgb(45, 45, 45);
+
+  font-family: speedee-bold;
+}
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  margin-block-end: -10px !important;
+}
+.carousel-indicators li {
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.carousel-indicators .active {
+  background-color: red !important;
+}
+/* ********** Card Styling ********** */
+
+.card-body {
+  text-align: center;
+}
+.card {
+  box-shadow: rgba(117, 117, 117, 0.35) 0px 5px 15px;
+}
+
+.card h3 {
+  color: #cf2e2e;
+
+  font-family: speedee-bold;
+}
+
+/* ******* footer styling ******** */
+/* Remove background color on active accordion header */
+.accordion-header button:not(.collapsed) {
+  background-color: transparent;
+}
+
+/* Remove outline color on active accordion header */
+.accordion-header button:not(.collapsed):focus {
+  box-shadow: none;
+}
+
+/* Remove background color on active accordion collapse body */
+.accordion-body {
+  background-color: transparent;
+}
+
+table {
+  display: inline-table;
+  margin-inline-end: 13.5vw;
+}
+
+thead {
+  line-height: 45px;
+}
+tbody {
+  color: black;
+  font-size: 16px;
+  line-height: 30px;
+}
+#foot a {
+  color: black;
+  margin-inline-end: 40px;
+}
+#i-social-2 {
+  float: inline-end;
+}
+#br4-sm,
+#br5-sm,
+#br6-sm,
+#br7-sm {
+  display: none;
+}
+#fb,
+#insta,
+#tweet,
+#linkin,
+#utube,
+#tiktok {
+  border-color: rgb(205, 205, 205);
+  border-radius: 50px;
+  background-color: white;
+}
+#fb:hover {
+  background-color: #3b5998;
+}
+#tweet:hover {
+  background-color: #1da1f2;
+}
+#tiktok:hover {
+  background-color: #f70250;
+}
+#utube:hover {
+  background-color: #cd201f;
+}
+#insta:hover {
+  background: linear-gradient(#f9ce34 5%, #ee2a7b 45%, #6228d7);
+}
+#linkin:hover {
+  background-color: #0077b5;
+}
+#accordionFlushExample-4,
+#accordionFlushExample-3,
+#accordionFlushExample-2,
+#accordionFlushExample-1 {
+  display: none;
+}
