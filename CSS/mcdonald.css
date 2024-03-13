@@ -142,7 +142,7 @@
 
 /* Style for accordion content */
 .accordion-content {
-  display: none;
+  /* display: none; */
   padding: 10px;
 }
 
